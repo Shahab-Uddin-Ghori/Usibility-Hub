@@ -1,207 +1,247 @@
 /* =========================================google fonts============================================== */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-.rubik{
-    font-family: "Rubik", sans-serif;
-    font-style: normal;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+}
 /* ========================================= end google fonts============================================== */
 
 /* ================================ Universal selector and root applying for color================================== */
-*{
-    padding: 0;
-    margin: 0;
-    font-family: "Rubik";
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik";
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
-:root{
-    --header-bg-color:#E74694;
-    --header--text-color:#FDFFFF;
-    --bg-color:#FFFFFF;
-    --second-bg-color:#183B56;
-    --third-bg-color:#EBF2FA;
-    --heading--text-color:#183B56;
-    --footer-color:#B9CDE4;
-    --footer-text-color:#577592;
-    --boder-color:#2294ED;
+:root {
+  --header-bg-color: #e74694;
+  --header--text-color: #fdffff;
+  --bg-color: #ffffff;
+  --second-bg-color: #183b56;
+  --third-bg-color: #ebf2fa;
+  --heading--text-color: #183b56;
+  --footer-color: #b9cde4;
+  --footer-text-color: #577592;
+  --boder-color: #2294ed;
 }
 /* ===================================== end Universal selector and root applying================================== */
 
 /* ==========================header/navbar flex container ======================================== */
 /* ==========================container 1  */
 
-.header-container1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    background-color: #E74694;
-    color: var(--header--text-color);
-    background-image: url(./images/asset\ 28.png);
-    width: 100%;
-    height: 3rem;
-    background-size:250px;
-    font-weight: 400;
-    letter-spacing: 1px;
+.header-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #e74694;
+  color: var(--header--text-color);
+  background-image: url(./images/asset\ 28.png);
+  width: 100%;
+  height: 3rem;
+  background-size: 250px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 /* ========================== end of container 1  */
 
 /* ========================== container 2  */
-.header-container2{
-display: flex;
-flex-wrap: wrap;
-justify-content:space-around;
-align-items: center;
-width: 100%;
-background-color: yellow;
-margin-top: .5rem;
+.header-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.5rem;
 }
 /* /////image logo/////// */
 
-.logo-img{
-    width: 15rem;
-    background-color: red;
-    align-self:baseline;
-    /* margin-top: 4px; */
+.logo-img {
+  width: 15rem;
+  align-self: baseline;
+  animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(0.8rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 /* ///////end of ing logo///// */
 /* ////////header-container2-btn////// */
-.header-container2-btn{
-    background-color: red;
-    display: flex;
-    gap: 2rem;
+.header-container2-btn {
+  display: flex;
+  gap: 2rem;
 }
-.sign-in, .sign-up{
-    color: var(--heading--text-color);
-    font-size: 16px;
-    width: 6.5rem;
-    height: 3.5rem;
-    border-radius: .5rem;
-    border: 1px solid var(--boder-color);
+.sign-in,
+.sign-up {
+  color: var(--heading--text-color);
+  font-size: 16px;
+  width: 6.5rem;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--boder-color);
 }
-.sign-in{
-    background-color: transparent;
-    color: var(--heading--text-color);
+.sign-in {
+  background-color: transparent;
+  color: var(--heading--text-color);
 }
-.sign-up{
-    background-color: var(--boder-color);
-    color: var(--header--text-color);
+.sign-up {
+  background-color: var(--boder-color);
+  color: var(--header--text-color);
 }
+/* hover and active */
+.sign-in:hover {
+  background-color: var(--boder-color);
+  color: var(--header--text-color);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.sign-in:active {
+  background-color: var(--boder-color);
+  color: var(--header--text-color);
+  cursor: pointer;
+  font-size: 15.5px;
+}
+.sign-up:hover {
+  background-color: var(--header--text-color);
+  color: var(--boder-color);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.sign-up:active {
+  background-color: var(--header--text-color);
+  color: var(--boder-color);
+  cursor: pointer;
+  font-size: 15.5px;
+}
+/* hover and active */
 /* /////////header-container2-btn end of  */
 
 /* &&&&&&&&&&&& header 2 link &&&&&&&header-container2-link&&&&&&&&& */
-.header-container2-link{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    background-color: red;
+.header-container2-link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-.header-container2-link a{
-    color: var(--heading--text-color);
+.header-container2-link a {
+  color: var(--heading--text-color);
+}
+.header-container2-link a:hover {
+  color: var(--heading--text-color);
+  transition: 0.5s ease;
+  box-shadow: 0rem 0.1rem 0.2rem;
 }
 /* &&&&&&&&&&&& end header 2 link &&&&&&&header-container2-link&&&&&&&&& */
 
 /* ========================== end of container 2  */
 
-
-    
 /* ==========================header/navbar flex container ======================================== */
 
 /* MMMMMMMMMMMMMMMMMMMMMMMMMMMM MEDIA SCREEN MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM */
 /* //////////for max 900px//////////// */
-@media only screen and (max-width: 900px){
-     p{
+@media only screen and (max-width: 900px) {
+  p {
     font-size: 0.8rem;
-}
-.logo-img{
+  }
+  .logo-img {
     width: 10rem;
-}
-.header-container2-link{
+  }
+  .header-container2-link {
     display: flex;
     gap: 0.8rem;
-}
-.header-container2-link a{
+  }
+  .header-container2-link a {
     font-size: 0.8rem;
-}
-.header-container2-btn{
+  }
+  .header-container2-btn {
     display: flex;
     gap: 1rem;
-}
-.sign-in, .sign-up{
+  }
+  .sign-in,
+  .sign-up {
     font-size: 14px;
     width: 5.5rem;
     height: 2.5rem;
-    border-radius: .5rem;
-}
-
+    border-radius: 0.5rem;
+  }
 }
 /* //////////end for max 900px//////////// */
 
 /* ...................for max 650px........... */
-@media only screen and (max-width: 650px){
-    p{
-   font-size: 0.8rem;
-}
-.logo-img{
-   width: 6rem;
-}
-.header-container2-link{
-   display: flex;
-   gap: 0.4rem;
-}
-.header-container2-link a{
-   font-size: 0.8rem;
-}
-.header-container2-btn{
-   display: flex;
-   gap: 0.5rem;
-}
-.sign-in, .sign-up{
-   font-size: 10px;
-   width: 3.2rem;
-   height: 1.5rem;
-   border-radius: .4rem;
-}
-
+@media only screen and (max-width: 650px) {
+  p {
+    font-size: 0.8rem;
+  }
+  .logo-img {
+    width: 6rem;
+  }
+  .header-container2-link {
+    display: flex;
+    gap: 0.4rem;
+  }
+  .header-container2-link a {
+    font-size: 0.8rem;
+  }
+  .header-container2-btn {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .sign-in,
+  .sign-up {
+    font-size: 10px;
+    width: 3.2rem;
+    height: 1.5rem;
+    border-radius: 0.4rem;
+  }
 }
 /* ...................end for max 650px........... */
 
 /* ///////////////for max 430 ///////////////////// */
-@media only screen and (max-width: 450px){
-    .header-container1 p{
-        text-align: center;
-    }
-    p{
-   font-size: 0.8rem;
-}
-.header-container2{
+@media only screen and (max-width: 450px) {
+  .header-container1 p {
+    text-align: center;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .header-container2 {
     flex-direction: column;
     text-align: center;
     gap: 0.6rem;
-}
-.logo-img{
-   width: 10rem;
-   text-align: center;
-}
-.header-container2-link{
-   display: flex;
-   gap: 0.8rem;
-}
-.header-container2-link a{
-   font-size: 0.8rem;
-}
-.header-container2-btn{
-   display: flex;
-   gap: 1rem;
-}
-.sign-in, .sign-up{
-   font-size: 12px;
-   width: 4.5rem;
-   height: 2rem;
-   border-radius: .4rem;
-}
-
+  }
+  .logo-img {
+    width: 10rem;
+    text-align: center;
+  }
+  .header-container2-link {
+    display: flex;
+    gap: 0.8rem;
+  }
+  .header-container2-link a {
+    font-size: 0.8rem;
+  }
+  .header-container2-btn {
+    display: flex;
+    gap: 1rem;
+  }
+  .sign-in,
+  .sign-up {
+    font-size: 12px;
+    width: 4.5rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+  }
 }
 /* /////////////// end for max 430 ///////////////////// */
 
