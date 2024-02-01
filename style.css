@@ -1,0 +1,110 @@
+/* =========================================google fonts============================================== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+.rubik{
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+  }
+/* ========================================= end google fonts============================================== */
+
+/* ================================ Universal selector and root applying for color================================== */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik";
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root{
+    --header-bg-color:#E74694;
+    --header--text-color:#FDFFFF;
+    --bg-color:#FFFFFF;
+    --second-bg-color:#183B56;
+    --third-bg-color:#EBF2FA;
+    --heading--text-color:#183B56;
+    --footer-color:#B9CDE4;
+    --footer-text-color:#577592;
+    --boder-color:#2294ED;
+}
+/* ===================================== end Universal selector and root applying================================== */
+
+/* ==========================header/navbar flex container ======================================== */
+/* ==========================container 1  */
+
+.header-container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #E74694;
+    color: var(--header--text-color);
+    background-image: url(./images/asset\ 28.png);
+    width: 100%;
+    height: 3rem;
+    background-size:250px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+/* ========================== end of container 1  */
+
+/* ========================== container 2  */
+.header-container2{
+display: flex;
+flex-wrap: wrap;
+justify-content:space-around;
+align-items: center;
+width: 100%;
+height: 4rem;
+background-color: yellow;
+}
+/* /////image logo/////// */
+
+.logo-img{
+    width: 15rem;
+    background-color: red;
+    align-self:baseline;
+    /* margin-top: 4px; */
+}
+/* ///////end of ing logo///// */
+/* ////////header-container2-btn////// */
+.header-container2-btn{
+    background-color: red;
+    display: flex;
+    gap: 2rem;
+}
+.sign-in, .sign-up{
+    color: var(--heading--text-color);
+    font-size: 16px;
+    width: 6.5rem;
+    height: 3.5rem;
+    border-radius: .5rem;
+    border: 1px solid var(--boder-color);
+}
+.sign-in{
+    background-color: transparent;
+    color: var(--heading--text-color);
+}
+.sign-up{
+    background-color: var(--boder-color);
+    color: var(--header--text-color);
+}
+/* /////////header-container2-btn end of  */
+
+/* &&&&&&&&&&&& header 2 link &&&&&&&header-container2-link&&&&&&&&& */
+.header-container2-link{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: red;
+}
+.header-container2-link a{
+    color: var(--heading--text-color);
+}
+/* &&&&&&&&&&&& end header 2 link &&&&&&&header-container2-link&&&&&&&&& */
+
+/* ========================== end of container 2  */
+
+
+    
+/* ==========================header/navbar flex container ======================================== */
+
