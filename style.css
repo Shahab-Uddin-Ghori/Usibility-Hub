@@ -212,6 +212,18 @@ max-width: 31rem;
   cursor: pointer;
   font-size: 15.5px;
 }
+.sec1-para{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--heading--text-color);
+}
+/* .the-world-best{
+max-width: 46rem;
+} */
 /* ************** right end********** */
 /* ************************ sec 1 top heading and top img ******************************** */
 
@@ -263,6 +275,10 @@ max-width: 31rem;
       height: 2rem;
       border-radius: .3rem;
     }
+    .the-world-best{
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
 }
 /* //////////end for max 900px//////////// */
 
@@ -299,6 +315,12 @@ max-width: 31rem;
   .top-img img{
     width: 20rem;
     height: 10rem;
+  }
+
+  .the-world-best{
+    font-size: 0.9rem;
+    font-weight: 400;
+    width: 20rem;
   }
 }
 /* ...................end for max 650px........... */
@@ -362,6 +384,11 @@ max-width: 31rem;
       border-radius: .2rem;
       margin-top: 1rem;
 
+    }
+    .the-world-best{
+      font-size: 0.9rem;
+      font-weight: 400;
+      width: 15rem;
     }
 }
 /* /////////////// end for max 430 ///////////////////// */
