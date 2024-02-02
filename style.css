@@ -239,6 +239,95 @@ gap: 2rem;
 }
 /* ///////////////////////////////sec 2 companies logo end ////////////////////////////// */
 
+
+/* ///////////////////////////////sec 3  ////////////////////////////////////////////// */
+
+/* <!-- //////////////////////features container ////////////////// - */
+.features-container{
+  background-image: url(./images/asset\ 29.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  size: 64% 100%;
+  margin-top: 2rem;
+  max-width: 1200px;
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+.features-header {
+  font-weight: 600;
+  padding-top: 6em;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--heading--text-color);
+}
+.features-button{
+  text-align: center;
+  margin-top: 1rem;
+}
+.features-btn{
+  font-size: 1rem;
+  width: 12rem;
+  height: 2.5rem;
+  font-weight: 400;
+  border-radius: 0.4rem;
+  border: 1px solid var(--boder-color);
+  background-color: transparent;
+  color: var(--heading--text-color);
+}
+.features-btn:hover, .rarr:hover{
+  background-color:var(--boder-color);
+  color: var(--header--text-color);
+  transition: .5s ease;
+}
+.features-btn:active{
+  font-size: 0.98rem;
+  box-shadow: -.1rem -.1rem .1rem inset var(--heading--text-color);
+}
+/* ///////////feature cards/////////////// */
+.features-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-bottom: 100px;
+}
+.features-card {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 30%;
+  text-align: center;
+}
+.features-card h3{
+  color: var(--heading--text-color);
+}
+.features-card p{
+  color: var(--heading--text-color);
+}
+.features-card img{
+  width: 40px;
+  height: 60p
+}
+.rarr{
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--);
+}
+
+
+
+
+/* <!-- //////////////////////features container end////////////////// - */
+  /* ///////////////////////////////sec 3 end //////////////// ////////////////////////////// */
+  
+  
 /* MMMMMMMMMMMMMMMMMMMMMMMMMMMM MEDIA SCREEN MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM */
 /* //////////for max 900px//////////// */
 @media only screen and (max-width: 1200px) {
