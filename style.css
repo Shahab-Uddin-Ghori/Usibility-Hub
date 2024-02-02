@@ -84,7 +84,6 @@
 }
 .sign-in,
 .sign-up {
-  color: var(--heading--text-color);
   font-size: 16px;
   width: 6.5rem;
   height: 3.5rem;
@@ -132,7 +131,7 @@
 .header-container2-link {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 .header-container2-link a {
   color: var(--heading--text-color);
@@ -148,9 +147,80 @@
 
 /* ==========================header/navbar flex container ======================================== */
 
+/* ************************ sec 1 top heading and top img ******************************** */
+.sec1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  /* background-color: red; */
+  width: 100%;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+/* ////left///// */
+.top-heading{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* background-color: yellow; */
+}
+.top-heading h1{
+color: var(--heading--text-color);
+font-size: 3rem;
+letter-spacing: 1px;
+/* background-color: purple; */
+max-width: 31rem;
+}
+.top-heading p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--heading--text-color);
+  margin-top: 1.5rem;
+  max-width: 31rem;
+}
+
+/* ////left end///// */
+/* ************** right ********** */
+.top-img img{
+  /* background-color: yellow; */
+  width: 40vw;
+  height: 30rem;
+}
+.getting-started{
+  margin-top: 1.5rem;
+  font-size: 16px;
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: .7rem;
+  border: 1px solid var(--boder-color);
+  background-color: var(--boder-color);
+  color: var(--header--text-color);
+}
+.getting-started:hover {
+  background-color: var(--header--text-color);
+  color: var(--boder-color);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.getting-started:active {
+  background-color: var(--header--text-color);
+  color: var(--boder-color);
+  cursor: pointer;
+  font-size: 15.5px;
+}
+/* ************** right end********** */
+/* ************************ sec 1 top heading and top img ******************************** */
+
+
+
+
 /* MMMMMMMMMMMMMMMMMMMMMMMMMMMM MEDIA SCREEN MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM */
 /* //////////for max 900px//////////// */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
   p {
     font-size: 0.8rem;
   }
@@ -175,6 +245,24 @@
     height: 2.5rem;
     border-radius: 0.5rem;
   }
+  .top-img img{
+    width: 30vw;
+    height: 15rem;
+  }
+  .top-heading h1{
+    font-size: 2rem;
+    max-width: 21rem;
+    }
+    .top-heading p{
+      font-size: 0.8rem;
+      max-width: 21rem;
+    }
+    .getting-started{
+      font-size: 12px;
+      width: 8rem;
+      height: 2rem;
+      border-radius: .3rem;
+    }
 }
 /* //////////end for max 900px//////////// */
 
@@ -203,6 +291,14 @@
     width: 3.2rem;
     height: 1.5rem;
     border-radius: 0.4rem;
+  }
+  .sec1{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .top-img img{
+    width: 20rem;
+    height: 10rem;
   }
 }
 /* ...................end for max 650px........... */
@@ -242,6 +338,31 @@
     height: 2rem;
     border-radius: 0.4rem;
   }
+  .sec1{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .top-img img{
+    width: 15rem;
+    height: 8rem;
+  }
+  .top-heading h1{
+    font-size: 1.4rem;
+    max-width: 15rem;
+    }
+    .top-heading p{
+      font-size: 0.8rem;
+      max-width: 15rem;
+      margin-top: 1rem;
+    }
+    .getting-started{
+      font-size: 10px;
+      width: 6rem;
+      height: 1.5rem;
+      border-radius: .2rem;
+      margin-top: 1rem;
+
+    }
 }
 /* /////////////// end for max 430 ///////////////////// */
 
