@@ -284,6 +284,9 @@ gap: 2rem;
     height: 2rem;
     border-radius: 0.3rem;
   }
+  .getting-started:active {
+    font-size: 11.5px;
+  }
   .the-world-best {
     font-size: 0.9rem;
     font-weight: 400;
@@ -317,6 +320,9 @@ gap: 2rem;
     height: 1.5rem;
     border-radius: 0.4rem;
   }
+  .sign-up:active, .sign-in:active{
+    font-size: 9.5px;
+  }
   .sec1 {
     display: flex;
     flex-direction: column-reverse;
@@ -330,6 +336,9 @@ gap: 2rem;
     font-size: 0.9rem;
     font-weight: 400;
     width: 20rem;
+  }
+  .getting-started:active {
+    font-size: 11.5px;
   }
 }
 /* ...................end for max 650px........... */
@@ -369,6 +378,9 @@ gap: 2rem;
     height: 2rem;
     border-radius: 0.4rem;
   }
+  .sign-up:active, .sign-in:active{
+    font-size: 11.5px;
+  }
   .sec1 {
     display: flex;
     flex-direction: column-reverse;
@@ -392,6 +404,9 @@ gap: 2rem;
     height: 1.5rem;
     border-radius: 0.2rem;
     margin-top: 1rem;
+  }
+  .getting-started:active {
+    font-size: 9.5px;
   }
   .the-world-best {
     font-size: 0.9rem;
