@@ -511,7 +511,7 @@ animation: floatImage 4s ease-in-out infinite;
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(31, 31, 31, 0.196);
+  box-shadow: 0 10px 20px rgba(17, 17, 17, 0.516);
   cursor: pointer;
 }
 
@@ -646,7 +646,17 @@ a {
 }
 
 /* /////////////////////////////////////////////////sec 6 cards end/////////////////////////////////// */
-
+.st-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 4rem;
+}
+.st-panel .button-primary:hover{
+background-color: var(--heading--text-color);
+color: var(--header--text-color)  ;
+}
 /* MMMMMMMMMMMMMMMMMMMMMMMMMMMM MEDIA SCREEN MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM */
 /* //////////for max 900px//////////// */
 @media only screen and (max-width: 1200px) {
