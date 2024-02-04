@@ -646,6 +646,7 @@ a {
 }
 
 /* /////////////////////////////////////////////////sec 6 cards end/////////////////////////////////// */
+/* ************************************** sec 7 ****************************** */
 .st-panel {
   display: flex;
   flex-direction: column;
@@ -657,8 +658,41 @@ a {
 background-color: var(--heading--text-color);
 color: var(--header--text-color)  ;
 }
+/* ************************************** sec 7 ****************************** */
+
+
+/* ////////////////////////////////////////// footer ////////////////////////////// */
+footer {
+  padding-top: 5em;
+  background-color: #ebf2fa;
+}
+.footer-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+  padding-inline: 1.2rem;
+}
+.logo-footer img {
+  width: 230px;
+}
+.grid-layout-footer {
+  display: flex;
+  column-gap: 50px;
+}
+.grid-layout-footer h3{
+  color: var(--heading--text-color);
+  margin-bottom: 1rem;
+}
+.grid-layout-footer li {
+  color: var(--heading--text-color);
+  font-weight: 300;
+  /* line-height: 24px; */
+
+}
+/* ////////////////////////////////////////// footer ////////////////////////////// */
 /* MMMMMMMMMMMMMMMMMMMMMMMMMMMM MEDIA SCREEN MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM */
-/* //////////for max 900px//////////// */
+/* //////////for max 1200px//////////// */
 @media only screen and (max-width: 1200px) {
   p {
     font-size: 0.8rem;
@@ -744,7 +778,7 @@ color: var(--header--text-color)  ;
   text-align: center;
 }
 }
-/* //////////end for max 900px//////////// */
+/* //////////end for max 1200px//////////// */
 
 /* ...................for max 650px........... */
 @media only screen and (max-width: 650px) {
@@ -837,6 +871,23 @@ font-size: 16px;
 .right-panel-inside {
 font-size: 10px;
 font-weight: bold;
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grid-layout-footer{
+  display: flex;
+  flex-direction: column;
+}
+.grid-layout-footer h3{
+  margin-top: 1rem;
+}
+.logo-footer img{
+  width: 180px;
+
 }
 }
 /* ...................end for max 650px........... */
