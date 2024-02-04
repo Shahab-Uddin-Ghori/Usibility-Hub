@@ -61,9 +61,10 @@
 .logo-img {
   width: 15rem;
   align-self: baseline;
-  animation: floatImage 4s ease-in-out infinite;
+  animation: floatLogo 4s ease-in-out infinite;
 }
-@keyframes floatImage {
+
+@keyframes floatLogo {
   0% {
     transform: translateX(0);
   }
@@ -89,6 +90,7 @@
   height: 3.5rem;
   border-radius: 0.5rem;
   border: 1px solid var(--boder-color);
+  transition: 0.5s ease;
 }
 .sign-in {
   background-color: transparent;
@@ -103,7 +105,6 @@
   background-color: var(--boder-color);
   color: var(--header--text-color);
   cursor: pointer;
-  transition: 0.5s ease;
 }
 .sign-in:active {
   background-color: var(--boder-color);
@@ -135,10 +136,11 @@
 }
 .header-container2-link a {
   color: var(--heading--text-color);
+  transition: 0.5s ease;
+
 }
 .header-container2-link a:hover {
   color: var(--heading--text-color);
-  transition: 0.5s ease;
   box-shadow: 0rem 0.1rem 0.2rem;
 }
 /* &&&&&&&&&&&& end header 2 link &&&&&&&header-container2-link&&&&&&&&& */
@@ -198,12 +200,12 @@
   border: 1px solid var(--boder-color);
   background-color: var(--boder-color);
   color: var(--header--text-color);
+  transition: 0.5s ease;
 }
 .getting-started:hover {
   background-color: var(--header--text-color);
   color: var(--boder-color);
   cursor: pointer;
-  transition: 0.5s ease;
 }
 
 .getting-started:active {
@@ -273,11 +275,13 @@ gap: 2rem;
   border: 1px solid var(--boder-color);
   background-color: transparent;
   color: var(--heading--text-color);
+  transition: .5s ease;
+
 }
 .features-btn:hover, .rarr:hover{
   background-color:var(--boder-color);
   color: var(--header--text-color);
-  transition: .5s ease;
+  cursor: pointer;
 }
 .features-btn:active{
   font-size: 0.98rem;
@@ -318,14 +322,171 @@ gap: 2rem;
   font-weight: 900;
   color: var(--);
 }
-
-
-
-
 /* <!-- //////////////////////features container end////////////////// - */
   /* ///////////////////////////////sec 3 end //////////////// ////////////////////////////// */
   
+  /* ****************************************sec 4 longest sec **********************************/
+  /* main container ///////////////////////////*/
+  .sec4-longest-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.2rem;
+  }
+  /* /////////////////////////////////////////// */
+  /* sec 4a */
+  .longest-sec-a{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-evenly;
+  }
+  .longest-sec-a-img{
+    width: 34vw;
+  animation: floatImage 4s ease-in-out infinite;
+  }
+  @keyframes floatImage {
+    0% {
+      transform: translateY(0);
+    }
   
+    50% {
+      transform: translateY(0.8rem);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .sec-4a-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 24rem;
+  }
+  .longest-sec-a-top-text{
+    font-size: 1rem;
+    color: var(--heading--text-color);
+  }
+  .sec-4a-content h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: var(--heading--text-color);
+  }
+  .sec-4a-content p{
+    font-size: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .sec-4a-content img{
+    width: 120px;
+  }
+  .qouted-text-div{
+    background-image: url(./images/asset\ 30.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding-inline: calc(30px);
+    padding-top: 20px;
+}
+.qouted-text-div p{
+  font-size: 1rem;
+  color: var(--heading--text-color);
+  line-height: 21px;
+  font-weight: 300;
+}
+.human-sec{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding-inline: 1.2rem;
+}
+.human-sec img{
+  width: 60px;
+}
+.human-content p{
+  display: block;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: var(--heading--text-color);
+}
+/* ////////////////// SEC 4b */
+.longest-sec-b{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: space-evenly;
+}
+.longest-sec-b-img{
+  width: 34vw;
+animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0.8rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+/* ////////////////// SEC 4b end*/
+/* ////////////////// SEC 4c */
+.longest-sec-c{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: space-evenly;
+}
+.longest-sec-c-img{
+  width: 34vw;
+animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0.8rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+/* ////////////////// SEC 4c end */
+  /* ****************************************sec 4 longest sec **********************************/
+  .features-header {
+    font-weight: 700;
+    padding-top: 6rem;
+    letter-spacing: 1.1px;
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 /* MMMMMMMMMMMMMMMMMMMMMMMMMMMM MEDIA SCREEN MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM */
 /* //////////for max 900px//////////// */
 @media only screen and (max-width: 1200px) {
